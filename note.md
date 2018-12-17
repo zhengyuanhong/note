@@ -37,28 +37,30 @@ git clone git@github.com:zhengyuanhong/note.git  //克隆远程项目
 
 # git最佳实践
 
+### 1.本地设置
+
 git config --global user.name "zhengyuanhong" //设置本地用户名
 
 git config --global user.email zhengyuanhong@example.com //设置本地邮箱
 
-### 远程已经存在项目，然后同步到本地
+### 2.远程已经存在项目，然后同步到本地
 
-	本地建立同名目录
-	初始化 git init
-	添加远程路径 git remote add url_address
-	将远端代码拉取到本地 git pull origin master 将远端的master分支拉取到本地。 
-	这一步也可以分解为两步：git fetch origin git merge origin 先拉取后合并
-	在项目路径下，一般需要.gitignore文件用于指定忽略那些文件。
-	修改文件后推送到远端。需要设置上游 git push --set-upstream gittest master
+	* 本地建立同名目录
+	* 初始化 git init
+	* 添加远程路径 git remote add url_address
+	* 将远端代码拉取到本地 git pull origin master 将远端的master分支拉取到本地。 
+	* 这一步也可以分解为两步：git fetch origin git merge origin 先拉取后合并
+	* 在项目路径下，一般需要.gitignore文件用于指定忽略那些文件。
+	* 修改文件后推送到远端。需要设置上游 git push --set-upstream gittest master
 
 
-### 本地有项目，想要存放在远程
+### 3.本地有项目，想要存放在远程
 
-	本地建立同名目录
-	初始化 git init
-	在远端建立同名项目
-	添加远程路径 git remote add url_address
-	将远端拉取到本地 git fetch origin ，合并远端和本地分支，由于这时远端和本地没有历史关联，需要使用 git merge --allow-unrelated-histories origin
+	* 本地建立同名目录
+	* 初始化 git init
+	* 在远端建立同名项目
+	* 添加远程路径 git remote add url_address
+	* 将远端拉取到本地 git fetch origin ，合并远端和本地分支，由于这时远端和本地没有历史关联，需要使用 git merge --allow-unrelated-histories origin
 	之后就可以进行推送了。
 
 ## 冲突
