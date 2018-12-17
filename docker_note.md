@@ -30,7 +30,7 @@ git clone https://github.com/laradock/laradock.git
 	3.PHP_INTERPRETER=php-fpm 使用php的解释引擎，这儿有两个参数可以选择（hhvm php-fpm）
 	4. DATA_SAVE_PATH=~/.laradock/data 数据保存目录。这儿的意思是：容器里的数据目录映射到宿主机哪个目录。
 	5. DOCKER_HOST_IP=10.0.75.1 设定docker内部网络ip
-备注：简单的介绍几个配置说明，建议同学们有时间可以把该配置文件读一遍，能理解每一个参数的含义，这样有助于搭建docker-compose环境。还有同学们只需要知道这个.env文件是对docker-compose构建容器时候，提供的一些参数即可。很像laravel的 .env文件
+	备注：简单的介绍几个配置说明，建议有时间可以把该配置文件读一遍，能理解每一个参数的含义，这样有助于搭建docker-compose环境。还有同学们只需要知道这个.env文件是对docker-compose构建容器时候，提供的一些参数即可。很像laravel的 .env文件
 对了，.env文件还有这下面的一些参数呢，它的意思就是具体对某一个容器的设置了。
 	例如：
 	PHP_FPM_INSTALL_XDEBUG=false
