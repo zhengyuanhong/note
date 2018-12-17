@@ -27,7 +27,7 @@ git clone https://github.com/laradock/laradock.git
 	编辑.env文件（这个.env文件是对环境信息的一些配置）。在这里对.env文件里一些配置信息做个简单说明：
 	1. APPLICATION=../ 设置docker-compose基础目前映射 比如：容器里的 /var/www目录映射到上级目录
 	2. PHP_VERSION=71 使用环境的php版本号。这里71表示7.1版本。之后在安装的过程中，php-fpm和php-cli安装版本都会引用这个变量。
-3.PHP_INTERPRETER=php-fpm 使用php的解释引擎，这儿有两个参数可以选择（hhvm php-fpm）
+	3.PHP_INTERPRETER=php-fpm 使用php的解释引擎，这儿有两个参数可以选择（hhvm php-fpm）
 	4. DATA_SAVE_PATH=~/.laradock/data 数据保存目录。这儿的意思是：容器里的数据目录映射到宿主机哪个目录。
 	5. DOCKER_HOST_IP=10.0.75.1 设定docker内部网络ip
 备注：简单的介绍几个配置说明，建议同学们有时间可以把该配置文件读一遍，能理解每一个参数的含义，这样有助于搭建docker-compose环境。还有同学们只需要知道这个.env文件是对docker-compose构建容器时候，提供的一些参数即可。很像laravel的 .env文件
