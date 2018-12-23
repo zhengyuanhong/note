@@ -33,6 +33,8 @@ git remote add <name> git@github.com:zhengyuanhong/note.git  //远程仓库与�
 
 git push -u <name> master //把本地仓库的所有内容推送到远程仓库上(第一次要使用的命令)之后就直接使用 git push <name> master 推送
 
+注意：在push过程中如果出现error: failed to push some refs to 需要使用git pull --rebase origin master这条指令的意思是把远程库中的更新合并到本地库中，–rebase的作用是取消掉本地库中刚刚的commit，并把他们接到更新后的版本库之中。
+
 ### 4.克隆远程仓库的项目
 
 git clone git@github.com:zhengyuanhong/note.git  //克隆远程项目
