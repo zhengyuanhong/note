@@ -5,6 +5,8 @@ git init //初始化
 
 git add <file> //把file(文件)添加到仓库
 
+注意：如果在windows下git提交遇到warning: LF will be replaced by CRLF in 需要 git config --global core.autocrlf false
+
 git commit -m "添加说明" //把file(文件)提交到仓库
 
 git status //查看仓库当前的状态
