@@ -84,4 +84,32 @@ git config --global user.email zhengyuanhong@example.com //设置本地邮箱
  git push origin :test // 刚提交到远程的test将被删除，本地还会保存的
 
 
+## 删除github仓库中的文件
+
+ git rm -r --cached 文件名 //删除文件
+
+ git commit -m "删除文件"  //提交
+
+ git push -u origin master  //提交到远程仓库
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
