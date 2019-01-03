@@ -91,6 +91,8 @@ git config --global user.email zhengyuanhong@example.com //设置本地邮箱
  git commit -m "删除文件"  //提交
 
  git push -u origin master  //提交到远程仓库
+ 
+ ssh-keygen -R "你的远程服务器ip地址" //第一次ssh登陆服务器
 
 
 
